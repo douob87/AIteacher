@@ -5,7 +5,7 @@ import os
 
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
-
+# tt
 # 建立一個 OpenAI 客戶端實例
 client = OpenAI(api_key=api_key)
 
