@@ -1,9 +1,52 @@
+/* 整個 scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    /* 寬度（垂直 scrollbar）或高度（水平） */
+}
+
+/* 滑動條的軌道背景 */
+::-webkit-scrollbar-track {
+    background: #18181a;
+    border-radius: 10px;
+}
+
+/* 可拖動的滑塊 */
+::-webkit-scrollbar-thumb {
+    background: #656565;
+    border-radius: 10px;
+    height: 20px;
+}
+
+/* 滑鼠 hover 在滑塊上 */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 body {
     margin: 0;
     background: #18181a;
     color: #fafafa;
     font-family: 'Segoe UI', 'Noto Sans TC', '微軟正黑體', Arial, sans-serif;
     height: 100vh;
+}
+
+#vedio {
+    display: flex;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 6px 10px;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+#vedio:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .chat-container {
@@ -13,6 +56,7 @@ body {
     max-width: 70%;
     margin: 0 auto;
     background: #18181a;
+    gap: 30px;
 }
 
 .chat-messages {
@@ -21,6 +65,7 @@ body {
     padding: 32px 12px 24px 12px;
     display: flex;
     flex-direction: column;
+    margin-right: 50px;
     gap: 16px;
 }
 
